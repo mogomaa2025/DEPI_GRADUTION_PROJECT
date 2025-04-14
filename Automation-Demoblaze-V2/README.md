@@ -74,7 +74,7 @@ or run as current file of the "ProductPurchaseTest" class
 ![image](https://github.com/user-attachments/assets/542eaf58-8d0c-422c-8269-93dbc5ab9b5c)
 
 ### View the Report 
-To view the report , navigate to `./Reports/Name_of_test_case.txt` to open it
+To view the report , navigate to `./Reports/Name_of_test_case.html` to open it
 
 ![image](https://i.ibb.co/kgmqfS6Z/b2.png)
 ![image](https://i.ibb.co/qMKVJjtJ/b1.png)
