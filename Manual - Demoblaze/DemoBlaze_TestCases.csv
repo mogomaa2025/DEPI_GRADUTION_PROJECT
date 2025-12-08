@@ -1,0 +1,591 @@
+TestCase_ID,Test_Title,Test_Data,Pre-Condition,Test_Steps,Expected_Results
+TC_SIGNUP_001,Successful user registration with valid credentials,"Username: testuser123
+Password: Test@123",User is on the home page and not logged in,"1. Click on ""Sign up"" link in navigation menu
+2. Verify Sign up modal is displayed
+3. Enter valid username in Username field
+4. Enter valid password in Password field
+5. Click on ""Sign up"" button","- Sign up modal opens successfully
+- Alert message appears: ""Sign up successful""
+- Modal closes after confirmation
+- User account is created in system"
+TC_SIGNUP_002,Registration fails with duplicate username,"Username: existinguser
+Password: Pass@456","User is on the home page, username already exists in database","1. Click on ""Sign up"" link in navigation menu
+2. Enter existing username in Username field
+3. Enter valid password in Password field
+4. Click on ""Sign up"" button","- Alert message appears: ""This user already exist""
+- User is not registered
+- Modal remains open"
+TC_SIGNUP_003,Registration validation for empty username,"Username: (empty)
+Password: Test@789",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Leave Username field empty
+3. Enter valid password in Password field
+4. Click on ""Sign up"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not registered
+- Modal remains open"
+TC_SIGNUP_004,Registration validation for empty password,"Username: newuser456
+Password: (empty)",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Enter valid username in Username field
+3. Leave Password field empty
+4. Click on ""Sign up"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not registered
+- Modal remains open"
+TC_SIGNUP_005,Registration validation for all empty fields,"Username: (empty)
+Password: (empty)",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Leave Username field empty
+3. Leave Password field empty
+4. Click on ""Sign up"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not registered
+- Modal remains open"
+TC_SIGNUP_006,Close Sign up modal using Close button,N/A,User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Verify Sign up modal is displayed
+3. Click on ""Close"" button at bottom of modal","- Sign up modal closes successfully
+- User returns to home page
+- No data is submitted"
+TC_SIGNUP_007,Close Sign up modal using X icon,N/A,User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Verify Sign up modal is displayed
+3. Click on ""X"" button at top right of modal","- Sign up modal closes successfully
+- User returns to home page
+- No data is submitted"
+TC_SIGNUP_008,Registration with special characters in username,"Username: test@user#123
+Password: Pass@123",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Enter username with special characters
+3. Enter valid password in Password field
+4. Click on ""Sign up"" button","- System accepts or rejects special characters appropriately
+- Appropriate validation message is shown
+- Registration succeeds or fails based on validation rules"
+TC_SIGNUP_009,Registration with minimum length password,"Username: testuser999
+Password: a",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Enter valid username in Username field
+3. Enter single character password
+4. Click on ""Sign up"" button","- System validates password length
+- Appropriate message is displayed if minimum length not met
+- Registration succeeds or fails based on password policy"
+TC_SIGNUP_010,Registration with maximum length username,"Username: verylongusernametestingmaximumlengthacceptance123456789
+Password: Pass@123",User is on the home page,"1. Click on ""Sign up"" link in navigation menu
+2. Enter very long username (50+ characters)
+3. Enter valid password in Password field
+4. Click on ""Sign up"" button","- System validates username length
+- Registration succeeds or appropriate validation message shown
+- Username is truncated or rejected if exceeds maximum length"
+TC_LOGIN_001,Successful login with valid credentials,"Username: testuser123
+Password: Test@123","User is on the home page, user account exists in system","1. Click on ""Log in"" link in navigation menu
+2. Verify Log in modal is displayed
+3. Enter valid username in Username field
+4. Enter valid password in Password field
+5. Click on ""Log in"" button","- Log in modal opens successfully
+- User is authenticated successfully
+- Modal closes after login
+- Username appears in navigation menu
+- ""Log in"" link changes to ""Log out"""
+TC_LOGIN_002,Login fails with invalid username,"Username: invaliduser999
+Password: Test@123",User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Enter invalid/non-existent username
+3. Enter password
+4. Click on ""Log in"" button","- Alert message appears: ""User does not exist""
+- User is not logged in
+- Modal remains open"
+TC_LOGIN_003,Login fails with incorrect password,"Username: testuser123
+Password: WrongPass@456","User is on the home page, user account exists","1. Click on ""Log in"" link in navigation menu
+2. Enter valid username
+3. Enter incorrect password
+4. Click on ""Log in"" button","- Alert message appears: ""Wrong password""
+- User is not logged in
+- Modal remains open"
+TC_LOGIN_004,Login validation for empty username,"Username: (empty)
+Password: Test@123",User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Leave Username field empty
+3. Enter password in Password field
+4. Click on ""Log in"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not logged in
+- Modal remains open"
+TC_LOGIN_005,Login validation for empty password,"Username: testuser123
+Password: (empty)",User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Enter username in Username field
+3. Leave Password field empty
+4. Click on ""Log in"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not logged in
+- Modal remains open"
+TC_LOGIN_006,Login validation for all empty fields,"Username: (empty)
+Password: (empty)",User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Leave Username field empty
+3. Leave Password field empty
+4. Click on ""Log in"" button","- Alert message appears: ""Please fill out Username and Password""
+- User is not logged in
+- Modal remains open"
+TC_LOGIN_007,Close Log in modal using Close button,N/A,User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Verify Log in modal is displayed
+3. Click on ""Close"" button at bottom of modal","- Log in modal closes successfully
+- User returns to home page
+- No authentication attempt is made"
+TC_LOGIN_008,Close Log in modal using X icon,N/A,User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Verify Log in modal is displayed
+3. Click on ""X"" button at top right of modal","- Log in modal closes successfully
+- User returns to home page
+- No authentication attempt is made"
+TC_LOGIN_009,Login with SQL injection attempt,"Username: admin' OR '1'='1
+Password: password",User is on the home page,"1. Click on ""Log in"" link in navigation menu
+2. Enter SQL injection string in Username field
+3. Enter any password
+4. Click on ""Log in"" button","- System properly sanitizes input
+- Login fails with appropriate error message
+- No unauthorized access is granted
+- Application remains secure"
+TC_LOGIN_010,Verify logout functionality,N/A,"User is logged in, on home page","1. Verify username is displayed in navigation
+2. Click on ""Log out"" link
+3. Observe navigation menu changes","- User is logged out successfully
+- Username disappears from navigation
+- ""Log out"" link changes to ""Log in""
+- User session is terminated"
+TC_CONTACT_001,Submit contact form with valid data,"Email: test@email.com
+Name: John Doe
+Message: This is a test message",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Verify Contact modal is displayed
+3. Enter valid email in Contact Email field
+4. Enter valid name in Contact Name field
+5. Enter message in Message field
+6. Click on ""Send message"" button","- Contact modal opens successfully
+- Alert message appears: ""Thanks for the message!!""
+- Modal closes after confirmation
+- Message is sent successfully"
+TC_CONTACT_002,Submit contact form with invalid email format,"Email: invalidemail
+Name: John Doe
+Message: Test message",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Enter invalid email format
+3. Enter valid name
+4. Enter message
+5. Click on ""Send message"" button","- System validates email format
+- Appropriate error message is displayed
+- Form is not submitted
+- Modal remains open"
+TC_CONTACT_003,Submit contact form with empty email,"Email: (empty)
+Name: John Doe
+Message: Test message",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Leave Email field empty
+3. Enter valid name
+4. Enter message
+5. Click on ""Send message"" button","- Validation message appears for required field
+- Form is not submitted
+- Modal remains open"
+TC_CONTACT_004,Submit contact form with empty name,"Email: test@email.com
+Name: (empty)
+Message: Test message",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Enter valid email
+3. Leave Name field empty
+4. Enter message
+5. Click on ""Send message"" button","- Validation message appears for required field
+- Form is not submitted
+- Modal remains open"
+TC_CONTACT_005,Submit contact form with empty message,"Email: test@email.com
+Name: John Doe
+Message: (empty)",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Enter valid email
+3. Enter valid name
+4. Leave Message field empty
+5. Click on ""Send message"" button","- Validation message appears for required field
+- Form is not submitted
+- Modal remains open"
+TC_CONTACT_006,Submit contact form with all empty fields,"Email: (empty)
+Name: (empty)
+Message: (empty)",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Leave all fields empty
+3. Click on ""Send message"" button","- Validation message appears for required fields
+- Form is not submitted
+- Modal remains open"
+TC_CONTACT_007,Close Contact modal using Close button,N/A,User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Verify Contact modal is displayed
+3. Click on ""Close"" button at bottom of modal","- Contact modal closes successfully
+- User returns to home page
+- No data is submitted"
+TC_CONTACT_008,Close Contact modal using X icon,N/A,User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Verify Contact modal is displayed
+3. Click on ""X"" button at top right of modal","- Contact modal closes successfully
+- User returns to home page
+- No data is submitted"
+TC_CONTACT_009,Submit contact form with special characters in message,"Email: test@email.com
+Name: John Doe
+Message: Test!@#$%^&*()_+-=[]{}|;:',.<>?/",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Enter valid email
+3. Enter valid name
+4. Enter message with special characters
+5. Click on ""Send message"" button","- System accepts special characters in message
+- Form is submitted successfully
+- Alert message appears: ""Thanks for the message!!"
+"- Modal closes""",,,,,
+TC_CONTACT_010,Submit contact form with very long message,"Email: test@email.com
+Name: John Doe
+Message: (1000+ character message)",User is on the home page,"1. Click on ""Contact"" link in navigation menu
+2. Enter valid email
+3. Enter valid name
+4. Enter very long message (1000+ characters)
+5. Click on ""Send message"" button","- System validates message length
+- Message is accepted or truncated based on limits
+- Appropriate handling of long text
+- Form submission succeeds or fails appropriately"
+TC_ABOUTUS_001,Open About Us modal and verify video player,N/A,User is on the home page,"1. Click on ""About us"" link in navigation menu
+2. Verify About Us modal is displayed
+3. Observe video player presence","- About Us modal opens successfully
+- Video player is displayed
+- Play button is visible and functional
+- Modal can be closed"
+TC_ABOUTUS_002,Play video in About Us modal,N/A,User is on the home page,"1. Click on ""About us"" link in navigation menu
+2. Verify About Us modal is displayed
+3. Click on Play button
+4. Observe video playback","- Video starts playing
+- Video controls are visible
+- Audio plays (if available)
+- Video can be paused"
+TC_ABOUTUS_003,Close About Us modal using Close button,N/A,"User is on the home page, About Us modal is open","1. Click on ""About us"" link in navigation menu
+2. Verify About Us modal is displayed
+3. Click on ""Close"" button at bottom of modal","- About Us modal closes successfully
+- Video stops playing (if playing)
+- User returns to home page"
+TC_ABOUTUS_004,Close About Us modal using X icon,N/A,"User is on the home page, About Us modal is open","1. Click on ""About us"" link in navigation menu
+2. Verify About Us modal is displayed
+3. Click on ""X"" button at top right of modal","- About Us modal closes successfully
+- Video stops playing (if playing)
+- User returns to home page"
+TC_HOME_001,Verify home page loads successfully,N/A,User navigates to demoblaze.com,"1. Open browser
+2. Navigate to https://www.demoblaze.com/
+3. Wait for page to load
+4. Verify page elements","- Home page loads successfully
+- Navigation menu is visible
+- Product categories are displayed
+- Product listings are visible
+- Carousel/slider is displayed
+- Footer information is present"
+TC_HOME_002,Verify product categories display,N/A,User is on the home page,"1. Locate Categories section on left side
+2. Verify category options","- ""CATEGORIES"" header is displayed
+- ""Phones"" category link is visible
+- ""Laptops"" category link is visible
+- ""Monitors"" category link is visible"
+TC_HOME_003,Filter products by Phones category,N/A,User is on the home page,"1. Click on ""Phones"" category link
+2. Observe product listing changes","- Only phone products are displayed
+- Laptop and Monitor products are hidden
+- Category filter is applied correctly"
+TC_HOME_004,Filter products by Laptops category,N/A,User is on the home page,"1. Click on ""Laptops"" category link
+2. Observe product listing changes","- Only laptop products are displayed
+- Phone and Monitor products are hidden
+- Category filter is applied correctly"
+TC_HOME_005,Filter products by Monitors category,N/A,User is on the home page,"1. Click on ""Monitors"" category link
+2. Observe product listing changes","- Only monitor products are displayed
+- Phone and Laptop products are hidden
+- Category filter is applied correctly"
+TC_HOME_006,Verify product pagination - Next button,N/A,User is on the home page with multiple products,"1. Scroll to product listing section
+2. Locate pagination controls
+3. Click on ""Next"" button
+4. Observe product list changes","- Page displays next set of products
+- Previous products are hidden
+- Pagination updates to show current page
+- ""Previous"" button becomes active"
+TC_HOME_007,Verify product pagination - Previous button,N/A,"User is on the home page, on second page of products","1. Navigate to second page of products
+2. Click on ""Previous"" button
+3. Observe product list changes","- Page displays previous set of products
+- Next page products are hidden
+- Pagination updates to show current page
+- User returns to first page"
+TC_HOME_008,Verify carousel/slider functionality - Next,N/A,User is on the home page,"1. Locate carousel at top of page
+2. Click on ""Next"" arrow button
+3. Observe slide changes","- Carousel advances to next slide
+- Image changes smoothly
+- Carousel indicators update
+- Auto-play continues (if enabled)"
+TC_HOME_009,Verify carousel/slider functionality - Previous,N/A,User is on the home page,"1. Locate carousel at top of page
+2. Click on ""Previous"" arrow button
+3. Observe slide changes","- Carousel goes to previous slide
+- Image changes smoothly
+- Carousel indicators update
+- Auto-play continues (if enabled)"
+TC_HOME_010,Verify navigation menu links,N/A,User is on the home page,"1. Verify all navigation menu items
+2. Check visibility and accessibility","- ""Home"" link is visible and active
+- ""Contact"" link is visible
+- ""About us"" link is visible
+- ""Cart"" link is visible
+- ""Log in"" link is visible
+- ""Sign up"" link is visible
+- All links are clickable"
+TC_PRODUCT_001,View product details by clicking product name,N/A,User is on the home page with products displayed,"1. Click on any product name link
+2. Wait for product detail page to load
+3. Verify page content","- Product detail page loads successfully
+- Product name is displayed
+- Product price is shown
+- Product description is visible
+- Product image is displayed
+- ""Add to cart"" button is present"
+TC_PRODUCT_002,View product details by clicking product image,N/A,User is on the home page with products displayed,"1. Click on any product image
+2. Wait for product detail page to load
+3. Verify page content","- Product detail page loads successfully
+- All product information is displayed correctly
+- Navigation remains functional"
+TC_PRODUCT_003,Add product to cart from product detail page,N/A,"User is on product detail page, user is logged in","1. Navigate to any product detail page
+2. Click on ""Add to cart"" button
+3. Observe confirmation","- Alert message appears: ""Product added""
+- Product is added to cart
+- Cart counter updates (if visible)
+- User can continue shopping"
+TC_PRODUCT_004,Add product to cart without login,N/A,"User is on product detail page, user is NOT logged in","1. Navigate to any product detail page
+2. Click on ""Add to cart"" button
+3. Observe system behavior","- Product is added to cart (or)
+- User is prompted to log in
+- Appropriate message is displayed
+- System handles guest cart appropriately"
+TC_PRODUCT_005,Navigate back to home from product detail page,N/A,User is on product detail page,"1. Click on ""Home"" link in navigation
+2. Verify page navigation","- User returns to home page
+- Product listing is displayed
+- Previous filters are cleared (or maintained)"
+TC_PRODUCT_006,Verify product price display format,N/A,User is on product detail page,"1. Navigate to any product detail page
+2. Observe price display format","- Price is displayed with dollar sign ($)
+- Price includes tax information (*includes tax)
+- Price is clearly visible
+- Formatting is consistent"
+TC_PRODUCT_007,Verify product description content,N/A,User is on product detail page,"1. Navigate to any product detail page
+2. Locate product description section
+3. Read description content","- Product description is displayed under ""Product description"" heading
+- Description provides relevant product information
+- Text is readable and properly formatted"
+TC_PRODUCT_008,Verify product image carousel on detail page,N/A,User is on product detail page,"1. Navigate to any product detail page
+2. Locate product image carousel
+3. Test carousel navigation","- Product images are displayed in carousel
+- Carousel indicators show current image
+- User can navigate between images
+- Images load properly"
+TC_CART_001,View empty cart,N/A,"User is on the home page, cart is empty","1. Click on ""Cart"" link in navigation menu
+2. Wait for cart page to load
+3. Verify page content","- Cart page loads successfully
+- ""Products"" heading is displayed
+- Cart table shows headers (Pic, Title, Price, x)
+- No products are listed
+- ""Total"" section shows 0 or empty
+- ""Place Order"" button is present"
+TC_CART_002,View cart with products,N/A,"User has added products to cart, user is on any page","1. Click on ""Cart"" link in navigation menu
+2. Wait for cart page to load
+3. Verify cart contents","- Cart page loads successfully
+- All added products are displayed in table
+- Product images are shown
+- Product titles are displayed
+- Product prices are shown
+- Delete (x) buttons are present for each item
+- Total price is calculated and displayed
+- ""Place Order"" button is present"
+TC_CART_003,Remove product from cart,N/A,"User is on cart page, cart contains at least one product","1. Locate product in cart table
+2. Click on ""x"" (delete) button for a product
+3. Observe cart changes","- Product is removed from cart immediately
+- Cart table updates
+- Total price recalculates
+- If cart becomes empty, table shows no products
+- Page remains on cart page"
+TC_CART_004,Verify cart total calculation with single product,N/A,"User is on cart page, cart contains one product","1. Note the product price
+2. Check the Total section
+3. Verify calculation","- Total matches the product price
+- Calculation is accurate
+- Total is displayed clearly"
+TC_CART_005,Verify cart total calculation with multiple products,N/A,"User is on cart page, cart contains multiple products","1. Note all product prices
+2. Calculate expected total manually
+3. Check the Total section
+4. Compare values","- Total equals sum of all product prices
+- Calculation is accurate
+- All products are included in total
+- Total updates when products are added/removed"
+TC_CART_006,Navigate to Place Order from cart,N/A,"User is on cart page, cart contains at least one product","1. Verify cart has products
+2. Click on ""Place Order"" button
+3. Observe modal appearance","- Place Order modal opens
+- Order form is displayed
+- Form fields are visible (Name, Country, City, Credit card, Month, Year)
+- ""Purchase"" and ""Close"" buttons are present"
+TC_CART_007,Attempt to place order with empty cart,N/A,"User is on cart page, cart is empty","1. Verify cart is empty
+2. Click on ""Place Order"" button
+3. Observe system behavior","- System prevents order placement (or)
+- Appropriate message is displayed
+- User is notified cart is empty (or)
+- Place Order modal opens but shows validation"
+TC_CART_008,Navigate back to home from cart page,N/A,User is on cart page,"1. Click on ""Home"" link in navigation
+2. Verify page navigation","- User returns to home page
+- Cart contents are preserved
+- Navigation is successful"
+TC_PLACEORDER_001,Place order with all valid details,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025","User is on cart page with products, Place Order modal is open","1. Click on ""Place Order"" button from cart
+2. Enter valid name in Name field
+3. Enter valid country in Country field
+4. Enter valid city in City field
+5. Enter valid credit card number
+6. Enter valid month
+7. Enter valid year
+8. Click on ""Purchase"" button","- All fields accept valid data
+- Order is processed successfully
+- Success modal appears with order confirmation
+- Order details are displayed (Amount, Card Number, Name, Date)
+- ""OK"" button is present to close confirmation
+- Cart is emptied after successful order"
+TC_PLACEORDER_002,Place order with empty Name field,"Name: (empty)
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Leave Name field empty
+3. Fill all other fields with valid data
+4. Click on ""Purchase"" button","- Validation message appears: ""Please fill out Name and Creditcard""
+- Order is not placed
+- Modal remains open
+- User can correct the error"
+TC_PLACEORDER_003,Place order with empty Country field,"Name: John Doe
+Country: (empty)
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Enter Name
+3. Leave Country field empty
+4. Fill all other required fields
+5. Click on ""Purchase"" button","- Order is processed (Country may be optional) or
+- Validation message appears if required
+- System handles optional field appropriately"
+TC_PLACEORDER_004,Place order with empty City field,"Name: John Doe
+Country: USA
+City: (empty)
+Credit card: 1234567890123456
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Enter Name and Country
+3. Leave City field empty
+4. Fill all other required fields
+5. Click on ""Purchase"" button","- Order is processed (City may be optional) or
+- Validation message appears if required
+- System handles optional field appropriately"
+TC_PLACEORDER_005,Place order with empty Credit card field,"Name: John Doe
+Country: USA
+City: New York
+Credit card: (empty)
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill Name field
+3. Fill Country and City
+4. Leave Credit card field empty
+5. Fill Month and Year
+6. Click on ""Purchase"" button","- Validation message appears: ""Please fill out Name and Creditcard""
+- Order is not placed
+- Modal remains open
+- User can correct the error"
+TC_PLACEORDER_006,Place order with empty Month field,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: (empty)
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill Name, Country, City, Credit card
+3. Leave Month field empty
+4. Fill Year
+5. Click on ""Purchase"" button","- Order is processed (Month may be optional) or
+- Validation message appears if required
+- System handles optional field appropriately"
+TC_PLACEORDER_007,Place order with empty Year field,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: (empty)",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill Name, Country, City, Credit card, Month
+3. Leave Year field empty
+4. Click on ""Purchase"" button","- Order is processed (Year may be optional) or
+- Validation message appears if required
+- System handles optional field appropriately"
+TC_PLACEORDER_008,Place order with all empty fields,"Name: (empty)
+Country: (empty)
+City: (empty)
+Credit card: (empty)
+Month: (empty)
+Year: (empty)",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Leave all fields empty
+3. Click on ""Purchase"" button","- Validation message appears: ""Please fill out Name and Creditcard""
+- Order is not placed
+- Modal remains open
+- User is prompted to fill required fields"
+TC_PLACEORDER_009,Place order with invalid credit card format,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill all fields
+3. Enter short/invalid credit card number
+4. Click on ""Purchase"" button","- System validates credit card format
+- Order is rejected with validation message (or)
+- Order is accepted (if no client-side validation)
+- Appropriate handling based on validation rules"
+TC_PLACEORDER_010,Place order with special characters in Name,"Name: John@Doe#123
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Enter name with special characters
+3. Fill all other fields with valid data
+4. Click on ""Purchase"" button","- System accepts or rejects special characters appropriately
+- Validation message shown if invalid
+- Order processes if accepted
+- Appropriate handling of edge case"
+TC_PLACEORDER_011,Place order with invalid month value,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 13
+Year: 2025",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill all fields
+3. Enter invalid month (e.g., 13 or 00)
+4. Click on ""Purchase"" button","- System validates month range (1-12)
+- Validation message appears if invalid
+- Order is not placed with invalid month
+- User can correct the error"
+TC_PLACEORDER_012,Place order with past year,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2020",Place Order modal is open with products in cart,"1. Open Place Order modal
+2. Fill all fields
+3. Enter past year in Year field
+4. Click on ""Purchase"" button","- System validates year (expired card)
+- Validation message appears if past year not allowed
+- Order is rejected or accepted based on validation
+- Appropriate error handling"
+TC_PLACEORDER_013,Close Place Order modal using Close button,N/A,Place Order modal is open,"1. Open Place Order modal
+2. Optionally fill some fields
+3. Click on ""Close"" button at bottom","- Place Order modal closes
+- User returns to cart page
+- Cart contents remain unchanged
+- No order is placed"
+TC_PLACEORDER_014,Close Place Order modal using X icon,N/A,Place Order modal is open,"1. Open Place Order modal
+2. Optionally fill some fields
+3. Click on ""X"" button at top right","- Place Order modal closes
+- User returns to cart page
+- Cart contents remain unchanged
+- No order is placed"
+TC_PLACEORDER_015,Verify order confirmation details,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025",User has successfully placed an order,"1. Complete a successful order
+2. Verify order confirmation modal content","- Order confirmation modal displays
+- Amount (total) is shown correctly
+- Card Number (masked or full) is displayed
+- Name on order is shown
+- Date of purchase is displayed
+- Confirmation message is present
+- ""OK"" button closes modal and returns to home"
+TC_PLACEORDER_016,Verify cart is emptied after successful order,"Name: John Doe
+Country: USA
+City: New York
+Credit card: 1234567890123456
+Month: 12
+Year: 2025","User has products in cart, ready to place order","1. Add products to cart
+2. Complete Place Order process successfully
+3. Click ""OK"" on confirmation
+4. Navigate to Cart page
+5. Verify cart contents","- After successful order, cart is emptied
+- Cart page shows no products
+- Total is 0 or empty
+- User can add new products to cart"
