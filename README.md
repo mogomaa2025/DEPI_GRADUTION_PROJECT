@@ -4,11 +4,11 @@ This repository contains the graduation project for Group 3 of the DEPI program.
 
 ## 🌟 Team Members
 
-- **Sara Maher Mostafa**
-- **Mariam Adel Ramdan**
 - **Mohamed Ahmed Gomaa**
-- **Nesrin Fathy Farag**
 - **Shahenda Magdy Abdelrhman**
+- **Mariam Adel Ramdan**
+- **Nesrin Fathy Farag**
+- **Sara Maher Mostafa**
 
 ## 🚀 Project Overview
 
