@@ -87,20 +87,21 @@ graph TD
 
     subgraph "Version 1 Details"
         v1_feat1["Java + Selenium"]
-        v1_feat2["No Framework"]
+        v1_feat2["No POM - Hardcoded"]
         v1_feat3["Basic FileWriter Report"]
     end
 
     subgraph "Version 2 Details"
         v2_feat1["TestNG for Test Management"]
-        v2_feat2["Page Object Model (POM)"]
+        v2_feat2["No POM - Hardcoded"]
         v2_feat3["ExtentReports for HTML Reports"]
     end
 
     subgraph "Version 3 Details"
         v3_feat1["Cucumber for BDD"]
-        v3_feat2["Allure for Advanced Reporting"]
-        v3_feat3["Video Recording & Advanced Error Handling"]
+        v3_feat2["Clean POM Structure"]
+        v3_feat3["Allure for Advanced Reporting"]
+        v3_feat4["Video Recording & Advanced Error Handling"]
     end
 
     v1 --> v1_feat1
@@ -114,18 +115,19 @@ graph TD
     v3 --> v3_feat1
     v3 --> v3_feat2
     v3 --> v3_feat3
+    v3 --> v3_feat4
 ```
 
 -   **Version 1: No Framework (Basic)**
-    -   **Description:** A simple Selenium project that uses basic `FileWriter` to generate `.txt` reports. This version establishes the initial automation scripts without any formal testing framework.
+    -   **Description:** A simple Selenium project that uses basic `FileWriter` to generate `.txt` reports. This version establishes the initial automation scripts. The structure is **hardcoded** and **does not use a design pattern** like the Page Object Model (POM).
     -   **Location:** `Automation-Demoblaze-V1-No-FrameWork-FileWriterReport/`
 
 -   **Version 2: TestNG Framework**
-    -   **Description:** This version introduces the TestNG framework for better test management, assertions, and reporting. It also utilizes `ExtentReports` to generate more structured and visually appealing HTML reports.
+    -   **Description:** This version introduces the TestNG framework for better test management, assertions, and reporting. It also utilizes `ExtentReports` to generate more structured and visually appealing HTML reports. Similar to V1, this version is **hardcoded** and **does not follow the POM design pattern**.
     -   **Location:** `Automation-Demoblaze-V2-TestNG-Framework-ExtentReport/`
 
 -   **Version 3: Cucumber & Allure Reporting**
-    -   **Description:** The most advanced version of the framework, which integrates Cucumber for Behavior-Driven Development (BDD). This allows for writing tests in a human-readable Gherkin syntax. The reporting is handled by the Allure Framework, which provides rich, interactive, and detailed test reports.
+    -   **Description:** The most advanced version of the framework, which is built with a **clean architecture** and implements the **Page Object Model (POM) design pattern**. It integrates Cucumber for Behavior-Driven Development (BDD), allowing tests to be written in a human-readable Gherkin syntax. Reporting is handled by the Allure Framework, which provides rich, interactive, and detailed test reports.
     -   **Location:** `Automation-Demoblaze-V3-Cucumber-AllureReporting/`
 
 ## 🏁 How to Run the Tests
