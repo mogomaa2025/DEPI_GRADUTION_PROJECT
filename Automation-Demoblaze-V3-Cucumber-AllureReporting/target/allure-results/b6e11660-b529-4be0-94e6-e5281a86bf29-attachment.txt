@@ -1,0 +1,9 @@
+Browser: chrome
+App URL: https://www.demoblaze.com/index.html
+Headless Mode: false
+Java Version: 24.0.1
+OS Name: Windows 11
+OS Version: 10.0
+User Name: gowano
+Test Environment: QA
+Execution Time: 2025-12-08 22:45:43

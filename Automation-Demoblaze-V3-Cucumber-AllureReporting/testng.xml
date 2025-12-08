@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoBlaze Test Automation Suite" parallel="tests" thread-count="4" verbose="1">
+    
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Smoke Test Suite -->
+    <test name="Smoke Tests" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.demoblaze.runners.SmokeTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Regression Test Suite -->
+    <test name="Regression Tests" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.demoblaze.runners.RegressionTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Critical Test Suite -->
+    <test name="Critical Tests" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.demoblaze.runners.CriticalTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- E2E Test Suite -->
+    <test name="End-to-End Tests" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.demoblaze.runners.E2ETestRunner"/>
+        </classes>
+    </test>
+
+</suite>

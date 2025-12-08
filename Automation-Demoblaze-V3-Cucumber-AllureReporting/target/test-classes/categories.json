@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Infrastructure problems",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*WebDriverException.*"
+  },
+  {
+    "name": "Outdated tests",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*NoSuchElementException.*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Login Issues",
+    "matchedStatuses": ["failed", "broken"],
+    "messageRegex": ".*[Ll]ogin.*"
+  },
+  {
+    "name": "UI Issues",
+    "matchedStatuses": ["failed", "broken"],
+    "messageRegex": ".*element.*not.*found.*"
+  },
+  {
+    "name": "Network Issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*timeout.*|.*connection.*"
+  },
+  {
+    "name": "Browser Issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*browser.*|.*driver.*"
+  },
+  {
+    "name": "Data Issues",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*data.*|.*expected.*but.*was.*"
+  }
+]

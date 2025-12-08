@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.demoblaze.runners.SmokeTestRunner" time="83.614" tests="10" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\gowano\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\g\java-selenium\target\test-classes;D:\g\java-selenium\target\classes;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\gowano\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\gowano\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\gowano\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gowano\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\gowano\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\gowano\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\gowano\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\gowano\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\gowano\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\gowano\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\gowano\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\gowano\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\gowano\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\gowano\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\gowano\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\gowano\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\gowano\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-attachments\2.25.0\allure-attachments-2.25.0.jar;C:\Users\gowano\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\gowano\.m2\repository\org\aspectj\aspectjweaver\1.9.20\aspectjweaver-1.9.20.jar;C:\Users\gowano\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\gowano\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\gowano\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\gowano\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\gowano\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.0\log4j-core-2.22.0.jar;C:\Users\gowano\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.0\log4j-api-2.22.0.jar;C:\Users\gowano\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\gowano\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\gowano\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\gowano\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\gowano\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\gowano\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\gowano\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\gowano\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\gowano\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\gowano\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\gowano\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\gowano\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="allure.link.issue.pattern" value="https://example.org/browse/{}"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\gowano\AppData\Local\Temp\surefire12337153863749185089\surefirebooter-20251208224803325_3.jar C:\Users\gowano\AppData\Local\Temp\surefire12337153863749185089 2025-12-08T22-48-03_093-jvmRun1 surefire-20251208224803325_1tmp surefire_0-20251208224803325_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="SmokeTestRunner"/>
+    <property name="surefire.test.class.path" value="D:\g\java-selenium\target\test-classes;D:\g\java-selenium\target\classes;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\gowano\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\gowano\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\gowano\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gowano\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\gowano\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\gowano\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\gowano\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\gowano\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\gowano\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\gowano\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\gowano\.m2\repository\org\slf4j\slf4j-api\2.0.10\slf4j-api-2.0.10.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\gowano\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\gowano\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\gowano\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\gowano\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\gowano\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\gowano\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\gowano\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\gowano\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\gowano\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\gowano\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\gowano\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\gowano\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\gowano\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\gowano\.m2\repository\io\qameta\allure\allure-attachments\2.25.0\allure-attachments-2.25.0.jar;C:\Users\gowano\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\gowano\.m2\repository\org\aspectj\aspectjweaver\1.9.20\aspectjweaver-1.9.20.jar;C:\Users\gowano\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\gowano\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\gowano\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\gowano\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\gowano\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.0\log4j-core-2.22.0.jar;C:\Users\gowano\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.0\log4j-api-2.22.0.jar;C:\Users\gowano\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\gowano\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\gowano\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\gowano\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\gowano\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\gowano\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\gowano\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\gowano\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\gowano\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\gowano\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\gowano\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\gowano\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\gowano\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\gowano\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\g\java-selenium\target/allure-results"/>
+    <property name="user.home" value="C:\Users\gowano"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="allure.link.tms.pattern" value="https://example.org/browse/{}"/>
+    <property name="basedir" value="D:\g\java-selenium"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\gowano\AppData\Local\Temp\surefire12337153863749185089\surefirebooter-20251208224803325_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="gowano"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\gowano\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\gowano\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="allure.link.pattern" value="https://example.org/browse/{}"/>
+    <property name="cucumber.filter.tags" value="@signup"/>
+    <property name="user.dir" value="D:\g\java-selenium"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.3.0\;$HOME;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-24\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Paragon Software\LinuxFS for Windows\;C:\Program Files\PowerShell\7\;C:\Users\gowano\bin;D:\Program Files\PostgreSQL\18\bin;C:\Program Files\PostgreSQL\16\bin;C:\Program Files\Redis;C:\allure\bin;D:\E-Commerce\apache-maven-3.9.11\bin;D:\Android\Sdk\platform-tool;D:\Android\Sdk\tools;C:\Program Files\PowerToys\DSCModules\;C:\Program Files\GitHub CLI\;%GEMINI_HOME%;C:\Users\gowano\scoop\shims;D:\Ruby33-x64\bin;C:\Users\gowano\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\gowano\AppData\Local\Programs\Python\Python39\;C:\Users\gowano\.local\bin;C:\Users\gowano\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\gowano\AppData\Local\Programs\Python\Python312\;C:\Users\gowano\AppData\Local\Microsoft\WindowsApps;C:\Users\gowano\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.4\bin;C:\env\ffmpeg-2025-08-04-git-9a32b86307-essentials_build\bin;C:\env\aria2-1.37.0-win-64bit-build1;C:\Users\gowano\AppData\Roaming\npm;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files\Tesseract-OCR;C:\Users\gowano\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\gowano\AppData\Local\Programs\Ollama;C:\Program Files (x86)\Jar2Exe Wizard\;D:\E-Commerce\maven\bin;C:\Users\gowano\AppData\Local\Programs\Antigravity\bin;C:\Users\gowano\AppData\Local\tgpt;D:\Program Files\JetBrains\IntelliJ IDEA 2025.2.5\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Successful user registration with valid credentials&quot;, &quot;User Registration&quot;](1)" classname="com.demoblaze.runners.SmokeTestRunner" time="9.709">
+    <system-out><![CDATA[2025-12-08 22:48:08.582 [main] INFO  com.demoblaze.utils.ConfigReader - Configuration loaded successfully from classpath
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Starting SMOKE TEST SUITE
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:48:09.339 [main] INFO  com.demoblaze.utils.VideoRecorder - Deleted 0 old video file(s)
+2025-12-08 22:48:09.339 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Suite setup completed successfully
+
+@regression @signup @smoke @critical @TC_SIGNUP_001
+Scenario: Successful user registration with valid credentials   # src/test/resources/features/01_signup.feature:11
+2025-12-08 22:48:11.890 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Successful user registration with valid credentials
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @smoke, @critical, @TC_SIGNUP_001]
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:11.896 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:14.614 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:14.616 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:14.616 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:14.739 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Successful user registration with valid credentials
+2025-12-08 22:48:14.740 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Successful user registration with valid credentials
+2025-12-08 22:48:14.749 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:14.762 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:14.835 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:14.836 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:15.988 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:16.005 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:16.098 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:16.547 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                          # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:16.588 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:16.589 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:16.590 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:16.590 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:16.797 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:16.797 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:16.798 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.422 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                            # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:17.433 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser_{timestamp}
+2025-12-08 22:48:17.435 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.436 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.476 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:17.477 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser_1765226897434
+2025-12-08 22:48:17.477 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:17.752 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "testuser_{timestamp}"                   # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:48:17.756 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:17.756 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.757 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.790 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:17.790 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:17.790 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:17.959 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "SecurePass123"                          # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:48:17.963 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:17.965 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.965 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:18.002 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:18.003 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:18.003 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:18.159 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                              # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:19.394 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:48:19.396 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:19.405 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:19.577 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:48:19.577 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:19.587 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:48:19.593 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Sign up successful." # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:19.595 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying user was created
+  And the user should be created in the system                  # com.demoblaze.stepdefinitions.SignUpSteps.theUserShouldBeCreatedInTheSystem()
+2025-12-08 22:48:19.598 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:19.601 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Successful user registration with valid credentials
+2025-12-08 22:48:20.798 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:20.800 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:20.842 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:21.068 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Successful user registration with valid credentials
+2025-12-08 22:48:21.073 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Dec 08, 2025 10:48:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registration fails with duplicate username&quot;, &quot;User Registration&quot;](2)" classname="com.demoblaze.runners.SmokeTestRunner" time="6.625">
+    <system-out><![CDATA[
+@regression @signup @negative @validation @TC_SIGNUP_002
+Scenario: User registration fails with duplicate username            # src/test/resources/features/01_signup.feature:20
+2025-12-08 22:48:21.208 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.209 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with duplicate username
+2025-12-08 22:48:21.209 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_002]
+2025-12-08 22:48:21.210 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.210 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:22.507 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:22.509 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with duplicate username
+2025-12-08 22:48:22.509 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with duplicate username
+2025-12-08 22:48:22.511 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:22.513 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:22.515 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:22.515 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:23.580 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:23.593 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:23.649 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:24.202 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                               # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:24.221 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Ensuring user exists: existinguser
+  Given a user "existinguser" already exists                         # com.demoblaze.stepdefinitions.SignUpSteps.aUserAlreadyExists(java.lang.String)
+2025-12-08 22:48:24.225 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:24.225 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:24.226 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:24.226 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:24.432 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:24.433 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:24.434 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.039 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                 # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:25.042 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: existinguser
+2025-12-08 22:48:25.043 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.044 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.094 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.095 [main] INFO  com.demoblaze.pages.BasePage - Entering username: existinguser
+2025-12-08 22:48:25.095 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:25.428 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "existinguser"                                # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:48:25.434 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:25.434 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.434 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.479 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.480 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:25.480 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:25.701 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "AnyPassword123"                              # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:48:25.706 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:25.706 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.706 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.740 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.740 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:25.741 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:25.923 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                   # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:26.925 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: This user already exist.
+2025-12-08 22:48:26.926 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:26.926 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:26.933 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: This user already exist.
+2025-12-08 22:48:26.934 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:26.940 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: This user already exist.
+2025-12-08 22:48:26.945 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "This user already exist." # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:26.948 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying registration was not completed
+  And the registration should not be completed                       # com.demoblaze.stepdefinitions.SignUpSteps.theRegistrationShouldNotBeCompleted()
+2025-12-08 22:48:26.950 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:26.950 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with duplicate username
+2025-12-08 22:48:27.367 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:27.367 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:27.368 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with duplicate username
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registration fails with empty username&quot;, &quot;User Registration&quot;](3)" classname="com.demoblaze.runners.SmokeTestRunner" time="6.255">
+    <system-out><![CDATA[
+@regression @signup @negative @validation @TC_SIGNUP_003
+Scenario: User registration fails with empty username                              # src/test/resources/features/01_signup.feature:30
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty username
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_003]
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:29.056 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:29.058 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty username
+2025-12-08 22:48:29.058 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty username
+2025-12-08 22:48:29.059 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:29.060 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:29.060 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:29.061 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:29.478 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:30.607 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:30.695 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:30.752 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                                             # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:30.765 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:30.766 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:30.766 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:30.766 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:30.947 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:30.949 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:30.949 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.537 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                               # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:31.539 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving username field empty
+2025-12-08 22:48:31.539 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.539 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.570 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.570 [main] INFO  com.demoblaze.pages.BasePage - Leaving username field empty
+2025-12-08 22:48:31.570 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:31.660 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+  And I leave the username field empty                                             # com.demoblaze.stepdefinitions.SignUpSteps.iLeaveTheUsernameFieldEmpty()
+2025-12-08 22:48:31.661 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:31.663 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.663 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.692 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.692 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:31.692 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:31.873 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "Password123"                                               # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:48:31.875 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:31.875 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.875 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.908 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.908 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:31.908 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:32.055 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                                 # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:33.060 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:33.061 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:33.061 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:33.071 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:33.071 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:33.080 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:33.088 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Please fill out Username and Password." # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:33.091 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:33.091 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty username
+2025-12-08 22:48:33.847 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:33.847 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:33.848 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty username
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:34.021 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:34.021 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registration fails with empty password&quot;, &quot;User Registration&quot;](4)" classname="com.demoblaze.runners.SmokeTestRunner" time="6.507">
+    <system-out><![CDATA[
+@regression @signup @negative @validation @TC_SIGNUP_004
+Scenario: User registration fails with empty password                              # src/test/resources/features/01_signup.feature:38
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty password
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_004]
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:35.159 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:35.159 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:35.163 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty password
+2025-12-08 22:48:35.163 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty password
+2025-12-08 22:48:35.165 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:35.167 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:35.168 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:35.168 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:36.952 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:36.998 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:37.042 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:37.455 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                                             # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:37.472 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:37.474 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:37.474 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:37.474 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:37.695 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:37.696 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:37.696 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.309 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                               # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:38.312 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser123
+2025-12-08 22:48:38.313 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.313 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.365 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.365 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser123
+2025-12-08 22:48:38.365 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:38.580 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "testuser123"                                               # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:48:38.582 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving password field empty
+2025-12-08 22:48:38.583 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.583 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.613 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.614 [main] INFO  com.demoblaze.pages.BasePage - Leaving password field empty
+2025-12-08 22:48:38.614 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:38.698 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+  And I leave the password field empty                                             # com.demoblaze.stepdefinitions.SignUpSteps.iLeaveThePasswordFieldEmpty()
+2025-12-08 22:48:38.699 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:38.701 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.701 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.727 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.727 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:38.727 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:38.893 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                                 # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:39.896 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:39.896 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:39.896 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:39.902 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:39.903 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:39.908 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:39.917 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Please fill out Username and Password." # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:39.920 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:39.920 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty password
+2025-12-08 22:48:40.354 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:40.355 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:40.355 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty password
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registration fails with all fields empty&quot;, &quot;User Registration&quot;](5)" classname="com.demoblaze.runners.SmokeTestRunner" time="6.56">
+    <system-out><![CDATA[
+@regression @signup @negative @validation @TC_SIGNUP_005
+Scenario: User registration fails with all fields empty                            # src/test/resources/features/01_signup.feature:46
+2025-12-08 22:48:40.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with all fields empty
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_005]
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:41.470 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:41.473 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with all fields empty
+2025-12-08 22:48:41.473 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with all fields empty
+2025-12-08 22:48:41.474 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:41.476 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:41.477 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:41.477 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:43.601 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:43.625 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:43.715 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:44.142 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                                             # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:44.154 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:44.154 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:44.154 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:44.154 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:44.316 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:44.318 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:44.318 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:44.901 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                               # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:44.903 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving all fields empty
+2025-12-08 22:48:44.904 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:44.905 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:44.952 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:44.952 [main] INFO  com.demoblaze.pages.BasePage - Leaving all fields empty
+2025-12-08 22:48:44.952 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:45.063 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+2025-12-08 22:48:45.063 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:45.136 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+  And I leave all fields empty                                                     # com.demoblaze.stepdefinitions.SignUpSteps.iLeaveAllFieldsEmpty()
+2025-12-08 22:48:45.137 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:45.138 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:45.138 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:45.169 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:45.170 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:45.170 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:45.328 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                                 # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:46.331 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:46.331 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:46.331 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:46.339 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:46.339 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:46.345 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:46.352 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Please fill out Username and Password." # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:46.354 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:46.354 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with all fields empty
+2025-12-08 22:48:46.940 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:46.940 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:46.941 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:47.091 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with all fields empty
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registration with special characters in credentials&quot;, &quot;User Registration&quot;](6)" classname="com.demoblaze.runners.SmokeTestRunner" time="5.956">
+    <system-out><![CDATA[
+@regression @signup @positive @specialchars @TC_SIGNUP_006
+Scenario: User registration with special characters in credentials # src/test/resources/features/01_signup.feature:53
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration with special characters in credentials
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @positive, @specialchars, @TC_SIGNUP_006]
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:48.118 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration with special characters in credentials
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration with special characters in credentials
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:48.122 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:48.123 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:48.123 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:49.148 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:49.199 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:49.261 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:49.830 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                             # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:49.846 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:49.846 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:49.847 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:49.847 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:50.077 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:50.078 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.080 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.660 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                               # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:48:50.662 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: test@user#123_{timestamp}
+2025-12-08 22:48:50.662 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.662 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.693 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:50.694 [main] INFO  com.demoblaze.pages.BasePage - Entering username: test@user#123_1765226930662
+2025-12-08 22:48:50.694 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:50.955 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "test@user#123_{timestamp}"                 # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:48:50.957 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:50.957 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.957 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.999 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:51.001 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:51.001 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:51.156 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "P@ss!w0rd#123"                             # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:48:51.158 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:51.159 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:51.160 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:51.203 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:51.204 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:51.204 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:51.342 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                 # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:48:52.346 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:48:52.347 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:52.347 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:52.354 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:48:52.356 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:52.361 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:48:52.367 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Sign up successful."    # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:48:52.368 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:52.369 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration with special characters in credentials
+2025-12-08 22:48:52.882 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:52.883 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:52.884 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration with special characters in credentials
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Close signup modal without registering&quot;, &quot;User Registration&quot;](7)" classname="com.demoblaze.runners.SmokeTestRunner" time="4.514">
+    <failure message="The step &apos;the signup modal is displayed&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;the signup modal is displayed&quot;)&#10;public void the_signup_modal_is_displayed() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'the signup modal is displayed' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("the signup modal is displayed")
+public void the_signup_modal_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+@regression @signup @ui @modal @TC_SIGNUP_007
+Scenario: Close signup modal without registering # src/test/resources/features/01_signup.feature:61
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Close signup modal without registering
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @ui, @modal, @TC_SIGNUP_007]
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:54.329 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:54.333 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Close signup modal without registering
+2025-12-08 22:48:54.333 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Close signup modal without registering
+2025-12-08 22:48:54.334 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:54.335 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:54.336 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:54.336 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:55.470 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:55.489 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:55.568 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:56.014 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage           # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:48:56.030 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:56.033 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:56.034 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:56.034 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:56.237 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:56.238 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:56.238 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:56.821 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link             # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+  And the signup modal is displayed
+  And I click the "Close" button                 # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+  Then the signup modal should be closed         # com.demoblaze.stepdefinitions.SignUpSteps.theSignupModalShouldBeClosed()
+  And I should remain on the homepage            # com.demoblaze.stepdefinitions.CommonSteps.iShouldRemainOnTheHomepage()
+2025-12-08 22:48:56.837 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:56.838 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Close signup modal without registering
+2025-12-08 22:48:57.404 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:57.404 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:57.405 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Close signup modal without registering
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Status: UNDEFINED
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:57.560 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Register multiple users with different credentials&quot;, &quot;User Registration&quot;](8)" classname="com.demoblaze.runners.SmokeTestRunner" time="5.957">
+    <system-out><![CDATA[
+@regression @signup @datadriven @TC_SIGNUP_008
+Scenario Outline: Register multiple users with different credentials # src/test/resources/features/01_signup.feature:78
+2025-12-08 22:48:57.592 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.592 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:48:58.602 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:58.602 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:58.604 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:58.605 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:59.922 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:59.935 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:59.979 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:00.416 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                               # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:49:00.435 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:00.436 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:00.436 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:00.436 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:00.673 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:00.674 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:00.674 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.264 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                 # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:49:01.266 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user1_{timestamp}
+2025-12-08 22:49:01.267 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.267 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.293 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.293 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user1_1765226941266
+2025-12-08 22:49:01.294 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:01.497 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "user1_{timestamp}"                           # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:49:01.498 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:01.499 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.499 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.530 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.530 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:01.530 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:01.681 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "Pass@123"                                    # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:49:01.682 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:01.684 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.684 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.719 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.719 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:01.719 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:01.855 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                   # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:49:02.860 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:02.860 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:02.860 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:02.866 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:02.866 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:02.871 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:02.878 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Sign up successful."      # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:49:02.880 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:02.880 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:03.346 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:03.346 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:03.347 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:48:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:48:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Register multiple users with different credentials&quot;, &quot;User Registration&quot;](9)" classname="com.demoblaze.runners.SmokeTestRunner" time="6.284">
+    <system-out><![CDATA[
+@regression @signup @datadriven @TC_SIGNUP_008
+Scenario Outline: Register multiple users with different credentials # src/test/resources/features/01_signup.feature:79
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:49:04.605 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:49:04.607 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:49:04.607 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:04.607 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:49:05.642 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:49:05.680 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:49:05.720 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:06.364 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                               # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:49:06.377 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:06.377 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:06.377 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:06.377 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:06.596 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:06.597 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:06.597 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.171 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                 # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:49:07.172 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user2_{timestamp}
+2025-12-08 22:49:07.172 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.172 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.206 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.206 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user2_1765226947172
+2025-12-08 22:49:07.206 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:07.409 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "user2_{timestamp}"                           # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:49:07.410 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:07.412 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.412 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.440 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.440 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:07.440 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:07.598 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "Test!456"                                    # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:49:07.599 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:07.599 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.599 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.635 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.635 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:07.635 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:07.790 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                   # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:49:08.806 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:08.807 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:08.807 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:08.814 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:08.815 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:08.828 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:08.846 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Sign up successful."      # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:49:08.856 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:08.856 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:09.654 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:09.654 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:09.655 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:09.815 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:49:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:49:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Register multiple users with different credentials&quot;, &quot;User Registration&quot;](10)" classname="com.demoblaze.runners.SmokeTestRunner" time="18.598">
+    <system-out><![CDATA[
+@regression @signup @datadriven @TC_SIGNUP_008
+Scenario Outline: Register multiple users with different credentials # src/test/resources/features/01_signup.feature:80
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:49:10.751 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:49:10.751 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:49:10.752 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:49:10.752 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:49:10.754 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:10.754 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:49:11.812 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:49:11.828 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:49:11.883 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:13.481 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+  Given I am on the DemoBlaze homepage                               # com.demoblaze.stepdefinitions.CommonSteps.iAmOnTheDemoBlazeHomepage()
+2025-12-08 22:49:13.501 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:13.502 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:13.502 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:13.502 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:13.896 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:13.897 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:13.897 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.553 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+  When I click on the "Sign up" link                                 # com.demoblaze.stepdefinitions.CommonSteps.iClickOnTheLink(java.lang.String)
+2025-12-08 22:49:14.554 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user3_{timestamp}
+2025-12-08 22:49:14.554 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.554 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.588 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:14.588 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user3_1765226954554
+2025-12-08 22:49:14.588 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:14.783 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+  And I enter username "user3_{timestamp}"                           # com.demoblaze.stepdefinitions.SignUpSteps.iEnterUsername(java.lang.String)
+2025-12-08 22:49:14.785 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:14.786 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.786 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.816 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:14.816 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:14.816 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:14.969 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+  And I enter password "Secure#789"                                  # com.demoblaze.stepdefinitions.SignUpSteps.iEnterPassword(java.lang.String)
+2025-12-08 22:49:14.972 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:14.972 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.972 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:15.003 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:15.003 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:15.003 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:15.156 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+  And I click the "Sign up" button                                   # com.demoblaze.stepdefinitions.SignUpSteps.iClickTheButton(java.lang.String)
+2025-12-08 22:49:16.161 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:16.162 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:16.162 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:16.169 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:16.169 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:16.178 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:16.186 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+  Then I should see an alert with message "Sign up successful."      # com.demoblaze.stepdefinitions.CommonSteps.iShouldSeeAnAlertWithMessage(java.lang.String)
+2025-12-08 22:49:16.192 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:16.192 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:17.045 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:17.046 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:17.047 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:28.415 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:28.415 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+]]></system-out>
+    <system-err><![CDATA[Dec 08, 2025 10:49:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 08, 2025 10:49:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

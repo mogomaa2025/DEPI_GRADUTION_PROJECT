@@ -1,0 +1,1408 @@
+2025-12-08 22:45:03.409 [main] INFO  com.demoblaze.utils.ConfigReader - Configuration loaded successfully from classpath
+2025-12-08 22:45:03.683 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:45:03.683 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Starting SMOKE TEST SUITE
+2025-12-08 22:45:03.684 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:45:04.410 [main] INFO  com.demoblaze.utils.VideoRecorder - Deleted 0 old video file(s)
+2025-12-08 22:45:04.410 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Suite setup completed successfully
+2025-12-08 22:45:08.377 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:08.394 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Successful user registration with valid credentials
+2025-12-08 22:45:08.395 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @smoke, @critical, @TC_SIGNUP_001]
+2025-12-08 22:45:08.395 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:08.404 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:11.760 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:11.760 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:11.760 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:11.761 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:11.761 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:11.761 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:11.883 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Successful user registration with valid credentials
+2025-12-08 22:45:11.885 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Successful user registration with valid credentials
+2025-12-08 22:45:11.895 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:11.911 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:12.003 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:12.004 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:13.275 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:13.322 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:13.571 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:14.066 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:14.166 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:14.166 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:14.167 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:14.167 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:14.975 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:14.980 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:14.981 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:15.615 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:15.619 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser_{timestamp}
+2025-12-08 22:45:15.620 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:15.620 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:15.661 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:15.662 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser_1765226715619
+2025-12-08 22:45:15.662 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:16.040 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:45:16.044 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:45:16.047 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:16.048 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:16.100 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:16.100 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:45:16.100 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:45:16.852 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:45:16.858 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:45:16.859 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:16.859 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:16.939 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:16.940 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:45:16.940 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:17.294 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:18.309 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:45:18.313 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:18.315 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:18.409 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:45:18.410 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:18.439 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:45:18.526 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:45:18.536 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying user was created
+2025-12-08 22:45:18.541 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:45:18.586 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Successful user registration with valid credentials
+2025-12-08 22:45:25.786 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:45:25.805 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:45:25.946 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:45:28.258 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:45:28.259 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:45:28.259 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:28.259 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Successful user registration with valid credentials
+2025-12-08 22:45:28.266 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:45:28.266 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:45:28.267 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:45:28.267 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:45:28.523 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:28.523 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with duplicate username
+2025-12-08 22:45:28.523 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_002]
+2025-12-08 22:45:28.523 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:28.524 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:29.480 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:29.480 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:29.481 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:29.481 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:29.481 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:29.481 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:29.483 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with duplicate username
+2025-12-08 22:45:29.483 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with duplicate username
+2025-12-08 22:45:29.484 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:29.485 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:29.486 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:29.486 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:31.300 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:31.317 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:31.367 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:32.199 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:32.212 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Ensuring user exists: existinguser
+2025-12-08 22:45:32.214 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:32.215 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:32.216 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:32.216 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:32.465 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:32.467 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:32.467 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:33.239 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:33.243 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: existinguser
+2025-12-08 22:45:33.244 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:33.244 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:33.286 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:33.287 [main] INFO  com.demoblaze.pages.BasePage - Entering username: existinguser
+2025-12-08 22:45:33.287 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:33.544 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:45:33.546 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:45:33.548 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:33.548 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:33.592 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:33.592 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:45:33.593 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:45:33.769 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:45:33.771 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:45:33.771 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:33.772 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:33.809 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:33.809 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:45:33.809 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:33.951 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:34.955 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: This user already exist.
+2025-12-08 22:45:34.956 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:34.956 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:34.967 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: This user already exist.
+2025-12-08 22:45:34.967 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:34.976 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: This user already exist.
+2025-12-08 22:45:34.984 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:45:34.987 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying registration was not completed
+2025-12-08 22:45:34.991 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:45:34.991 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with duplicate username
+2025-12-08 22:45:35.727 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:45:35.727 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:45:35.728 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:45:35.912 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:45:35.912 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with duplicate username
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:45:35.913 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:45:35.955 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:35.955 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty username
+2025-12-08 22:45:35.955 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_003]
+2025-12-08 22:45:35.955 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:35.957 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:37.067 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:37.067 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:37.067 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:37.068 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:37.068 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:37.069 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:37.070 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty username
+2025-12-08 22:45:37.070 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty username
+2025-12-08 22:45:37.071 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:37.073 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:37.074 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:37.075 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:38.185 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:38.199 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:38.248 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:38.910 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:38.932 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:38.938 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:38.940 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:38.940 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:39.321 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:39.323 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:39.324 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:39.932 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:39.935 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving username field empty
+2025-12-08 22:45:39.935 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:39.935 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:39.967 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:39.967 [main] INFO  com.demoblaze.pages.BasePage - Leaving username field empty
+2025-12-08 22:45:39.967 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:40.057 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+2025-12-08 22:45:40.059 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:45:40.059 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:40.060 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:40.098 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:40.098 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:45:40.099 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:45:40.328 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:45:40.330 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:45:40.331 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:40.331 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:40.366 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:40.366 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:45:40.366 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:40.520 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:41.523 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:45:41.523 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:41.525 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:41.533 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:45:41.533 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:41.544 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:45:41.556 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:45:41.565 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:45:41.565 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty username
+2025-12-08 22:45:42.218 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:45:42.218 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:45:42.220 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:45:42.424 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:45:42.424 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:45:42.424 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:42.425 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty username
+2025-12-08 22:45:42.425 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:45:42.425 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:45:42.425 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:45:42.425 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:45:42.454 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:42.454 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty password
+2025-12-08 22:45:42.455 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_004]
+2025-12-08 22:45:42.455 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:42.455 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:43.347 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:43.347 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:43.347 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:43.348 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:43.348 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:43.348 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:43.349 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty password
+2025-12-08 22:45:43.349 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty password
+2025-12-08 22:45:43.351 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:43.353 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:43.354 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:43.355 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:44.452 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:44.465 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:44.515 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:44.996 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:45.010 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:45.011 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:45.011 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:45.011 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:45.194 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:45.196 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:45.196 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:45.780 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:45.783 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser123
+2025-12-08 22:45:45.784 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:45.784 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:45.812 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:45.813 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser123
+2025-12-08 22:45:45.813 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:45.996 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:45:45.998 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving password field empty
+2025-12-08 22:45:45.998 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:45.998 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:46.032 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:46.032 [main] INFO  com.demoblaze.pages.BasePage - Leaving password field empty
+2025-12-08 22:45:46.032 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:45:46.110 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+2025-12-08 22:45:46.112 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:45:46.112 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:46.113 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:46.139 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:46.139 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:45:46.140 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:46.283 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:47.287 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:45:47.288 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:47.288 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:47.297 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:45:47.297 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:47.305 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:45:47.315 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:45:47.319 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:45:47.320 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty password
+2025-12-08 22:45:48.068 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:45:48.069 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:45:48.071 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:45:48.380 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:45:48.380 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty password
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:45:48.381 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:45:48.404 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:48.404 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with all fields empty
+2025-12-08 22:45:48.404 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_005]
+2025-12-08 22:45:48.404 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:48.404 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:49.388 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:49.388 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:49.389 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:49.389 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:49.389 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:49.389 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:49.390 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with all fields empty
+2025-12-08 22:45:49.390 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with all fields empty
+2025-12-08 22:45:49.392 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:49.393 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:49.394 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:49.394 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:51.671 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:51.683 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:51.727 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:52.203 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:52.214 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:52.215 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:52.215 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:52.215 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:52.416 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:52.418 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:52.418 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:52.991 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:52.995 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving all fields empty
+2025-12-08 22:45:52.995 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:52.996 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:53.030 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:53.031 [main] INFO  com.demoblaze.pages.BasePage - Leaving all fields empty
+2025-12-08 22:45:53.031 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:53.126 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+2025-12-08 22:45:53.127 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:45:53.202 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+2025-12-08 22:45:53.204 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:45:53.205 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:53.205 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:53.248 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:53.248 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:45:53.248 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:53.447 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:45:54.449 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:45:54.449 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:54.450 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:54.457 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:45:54.457 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:45:54.466 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:45:54.473 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:45:54.478 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:45:54.479 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with all fields empty
+2025-12-08 22:45:55.128 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:45:55.128 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:45:55.129 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with all fields empty
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:45:55.299 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:45:55.300 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:45:55.301 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:45:55.334 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:55.334 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration with special characters in credentials
+2025-12-08 22:45:55.335 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @positive, @specialchars, @TC_SIGNUP_006]
+2025-12-08 22:45:55.335 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:45:55.335 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:45:56.282 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:45:56.282 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:45:56.282 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:45:56.282 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:45:56.282 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:45:56.283 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:45:56.283 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration with special characters in credentials
+2025-12-08 22:45:56.283 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration with special characters in credentials
+2025-12-08 22:45:56.285 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:45:56.286 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:45:56.287 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:56.287 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:45:57.343 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:45:57.365 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:45:57.484 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:45:58.745 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:45:58.756 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:45:58.757 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:45:58.757 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:45:58.757 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:45:58.951 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:45:58.951 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:58.951 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:59.556 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:59.561 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: test@user#123_{timestamp}
+2025-12-08 22:45:59.562 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:59.562 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:59.605 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:59.605 [main] INFO  com.demoblaze.pages.BasePage - Entering username: test@user#123_1765226759562
+2025-12-08 22:45:59.605 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:45:59.933 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:45:59.935 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:45:59.935 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:45:59.935 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:45:59.991 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:45:59.991 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:45:59.993 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:46:00.207 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:46:00.208 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:46:00.209 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:00.209 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:00.241 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:00.241 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:46:00.241 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:00.397 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:01.407 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:46:01.408 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:01.409 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:01.955 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:46:01.955 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:01.965 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:46:01.972 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:46:01.975 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:46:01.975 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration with special characters in credentials
+2025-12-08 22:46:02.757 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:46:02.759 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:46:02.760 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:46:02.941 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration with special characters in credentials
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:46:02.942 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:46:03.010 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:03.011 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Close signup modal without registering
+2025-12-08 22:46:03.011 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @ui, @modal, @TC_SIGNUP_007]
+2025-12-08 22:46:03.011 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:03.011 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:46:04.002 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:46:04.002 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:46:04.002 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:46:04.002 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:46:04.002 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:46:04.003 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:46:04.004 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Close signup modal without registering
+2025-12-08 22:46:04.005 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Close signup modal without registering
+2025-12-08 22:46:04.005 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:46:04.006 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:46:04.007 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:04.008 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:46:05.039 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:46:05.052 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:46:05.122 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:46:05.804 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:46:05.828 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:46:05.831 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:05.831 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:46:05.831 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:46:06.066 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:46:06.067 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:06.067 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:08.041 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:08.054 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:46:08.054 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Close signup modal without registering
+2025-12-08 22:46:08.961 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:46:08.961 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:46:08.962 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Close signup modal without registering
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - Status: UNDEFINED
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:46:09.128 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:46:09.189 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:09.189 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:46:09.189 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:46:09.189 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:09.189 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:46:10.155 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:46:10.157 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:46:10.159 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:46:10.159 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:10.160 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:46:12.539 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:46:12.555 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:46:12.611 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:46:13.217 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:46:13.235 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:46:13.237 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:13.237 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:46:13.237 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:46:13.430 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:46:13.430 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:13.430 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:14.020 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:14.022 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user1_{timestamp}
+2025-12-08 22:46:14.022 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:14.023 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:14.056 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:14.056 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user1_1765226774022
+2025-12-08 22:46:14.058 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:46:14.330 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:46:14.331 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:46:14.331 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:14.331 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:14.367 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:14.367 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:46:14.367 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:46:14.566 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:46:14.568 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:46:14.569 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:14.570 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:14.622 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:14.622 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:46:14.622 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:14.812 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:15.827 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:46:15.827 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:15.827 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:15.833 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:46:15.833 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:15.837 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:46:15.843 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:46:15.845 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:46:15.845 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:46:16.324 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:46:16.324 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:46:16.325 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:46:16.530 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:46:16.530 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:46:16.530 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:16.530 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:46:16.531 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:46:16.531 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:46:16.531 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:46:16.531 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:46:16.554 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:16.555 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:46:16.555 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:46:16.555 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:16.555 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:46:17.448 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:46:17.449 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:46:17.451 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:46:17.452 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:46:17.453 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:17.453 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:46:19.214 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:46:19.226 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:46:19.266 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:46:19.602 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:46:19.614 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:46:19.615 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:19.615 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:46:19.615 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:46:19.765 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:46:19.766 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:19.766 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:20.365 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:20.366 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user2_{timestamp}
+2025-12-08 22:46:20.366 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:20.367 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:20.413 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:20.413 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user2_1765226780366
+2025-12-08 22:46:20.413 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:46:20.631 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:46:20.632 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:46:20.633 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:20.633 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:20.660 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:20.660 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:46:20.660 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:46:20.830 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:46:20.833 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:46:20.834 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:20.834 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:20.869 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:20.869 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:46:20.869 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:21.040 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:22.044 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:46:22.045 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:22.045 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:22.052 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:46:22.052 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:22.057 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:46:22.062 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:46:22.073 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:46:22.073 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:46:22.597 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:46:22.598 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:46:22.598 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:46:22.733 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:46:22.734 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:46:22.752 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:22.752 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:46:22.753 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:46:22.753 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:22.753 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:46:23.584 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:46:23.585 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:46:23.585 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:46:23.585 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:46:23.592 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:46:23.593 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:23.593 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:46:24.708 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:46:24.723 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:46:24.775 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:46:25.267 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:46:25.282 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:46:25.282 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:25.282 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:46:25.282 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:46:25.448 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:46:25.448 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:25.448 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:26.039 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:26.040 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user3_{timestamp}
+2025-12-08 22:46:26.041 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:26.041 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:26.070 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:26.070 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user3_1765226786040
+2025-12-08 22:46:26.070 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:46:26.247 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:46:26.247 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:46:26.247 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:26.247 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:26.274 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:26.274 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:46:26.274 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:46:26.414 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:46:26.416 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:46:26.417 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:46:26.417 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:46:26.457 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:46:26.457 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:46:26.457 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:26.611 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:46:27.622 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:46:27.623 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:46:27.623 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:27.629 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:46:27.629 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:46:27.634 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:46:27.639 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:46:27.641 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:46:27.641 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:46:28.221 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:46:28.221 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:46:28.222 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:46:28.493 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:46:28.494 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:46:28.652 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:46:28.652 [main] INFO  com.demoblaze.runners.SmokeTestRunner - SMOKE TEST SUITE COMPLETED
+2025-12-08 22:46:28.652 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:46:28.653 [main] INFO  com.demoblaze.runners.SmokeTestRunner - No remaining drivers to cleanup
+2025-12-08 22:46:28.653 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Test Suite Summary
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.utils.AllureHelper - Test suite summary created for Allure report
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Test execution summary:
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Total tests: 10
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Passed: 9
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Failed: 1
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Execution time: 84937 ms
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Final driver count: 0
+2025-12-08 22:46:28.654 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Success rate: 90.00%
+2025-12-08 22:46:28.655 [main] INFO  com.demoblaze.utils.VideoRecorder - Deleted 0 old video file(s)
+2025-12-08 22:46:28.655 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Suite teardown completed successfully
+2025-12-08 22:46:28.868 [Thread-1] INFO  com.demoblaze.utils.DriverManager - JVM shutdown detected, cleaning up remaining drivers...
+2025-12-08 22:46:28.869 [Thread-1] INFO  com.demoblaze.utils.DriverManager - Cleaning up all tracked drivers. Total count: 0
+2025-12-08 22:46:28.869 [Thread-1] INFO  com.demoblaze.utils.DriverManager - Driver cleanup completed. Remaining drivers: 0
+2025-12-08 22:48:08.582 [main] INFO  com.demoblaze.utils.ConfigReader - Configuration loaded successfully from classpath
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Starting SMOKE TEST SUITE
+2025-12-08 22:48:08.819 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:48:09.339 [main] INFO  com.demoblaze.utils.VideoRecorder - Deleted 0 old video file(s)
+2025-12-08 22:48:09.339 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Suite setup completed successfully
+2025-12-08 22:48:11.890 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Successful user registration with valid credentials
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @smoke, @critical, @TC_SIGNUP_001]
+2025-12-08 22:48:11.891 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:11.896 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:14.614 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:14.615 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:14.616 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:14.616 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:14.739 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Successful user registration with valid credentials
+2025-12-08 22:48:14.740 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Successful user registration with valid credentials
+2025-12-08 22:48:14.749 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:14.762 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:14.835 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:14.836 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:15.988 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:16.005 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:16.098 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:16.547 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:16.588 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:16.589 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:16.590 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:16.590 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:16.797 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:16.797 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:16.798 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.422 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:17.433 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser_{timestamp}
+2025-12-08 22:48:17.435 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.436 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.476 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:17.477 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser_1765226897434
+2025-12-08 22:48:17.477 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:17.752 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:48:17.756 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:17.756 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.757 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:17.790 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:17.790 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:17.790 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:17.959 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:48:17.963 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:17.965 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:17.965 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:18.002 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:18.003 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:18.003 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:18.159 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:19.394 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:48:19.396 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:19.405 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:19.577 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:48:19.577 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:19.587 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:48:19.593 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:19.595 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying user was created
+2025-12-08 22:48:19.598 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:19.601 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Successful user registration with valid credentials
+2025-12-08 22:48:20.798 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:20.800 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:20.842 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:21.068 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.070 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Successful user registration with valid credentials
+2025-12-08 22:48:21.073 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:21.074 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:21.208 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.209 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with duplicate username
+2025-12-08 22:48:21.209 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_002]
+2025-12-08 22:48:21.210 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:21.210 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:22.507 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:22.508 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:22.509 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with duplicate username
+2025-12-08 22:48:22.509 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with duplicate username
+2025-12-08 22:48:22.511 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:22.513 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:22.515 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:22.515 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:23.580 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:23.593 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:23.649 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:24.202 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:24.221 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Ensuring user exists: existinguser
+2025-12-08 22:48:24.225 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:24.225 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:24.226 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:24.226 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:24.432 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:24.433 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:24.434 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.039 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.042 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: existinguser
+2025-12-08 22:48:25.043 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.044 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.094 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.095 [main] INFO  com.demoblaze.pages.BasePage - Entering username: existinguser
+2025-12-08 22:48:25.095 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:25.428 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:48:25.434 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:25.434 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.434 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.479 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.480 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:25.480 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:25.701 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:48:25.706 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:25.706 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:25.706 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:25.740 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:25.740 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:25.741 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:25.923 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:26.925 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: This user already exist.
+2025-12-08 22:48:26.926 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:26.926 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:26.933 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: This user already exist.
+2025-12-08 22:48:26.934 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:26.940 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: This user already exist.
+2025-12-08 22:48:26.945 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:26.948 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Verifying registration was not completed
+2025-12-08 22:48:26.950 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:26.950 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with duplicate username
+2025-12-08 22:48:27.367 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:27.367 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:27.368 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.758 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with duplicate username
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:27.759 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty username
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_003]
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:27.850 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:29.056 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:29.057 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:29.058 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty username
+2025-12-08 22:48:29.058 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty username
+2025-12-08 22:48:29.059 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:29.060 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:29.060 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:29.061 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:29.478 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:30.607 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:30.695 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:30.752 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:30.765 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:30.766 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:30.766 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:30.766 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:30.947 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:30.949 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:30.949 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.537 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.539 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving username field empty
+2025-12-08 22:48:31.539 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.539 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.570 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.570 [main] INFO  com.demoblaze.pages.BasePage - Leaving username field empty
+2025-12-08 22:48:31.570 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:31.660 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+2025-12-08 22:48:31.661 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:31.663 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.663 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.692 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.692 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:31.692 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:31.873 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:48:31.875 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:31.875 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:31.875 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:31.908 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:31.908 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:31.908 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:32.055 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:33.060 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:33.061 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:33.061 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:33.071 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:33.071 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:33.080 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:33.088 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:33.091 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:33.091 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty username
+2025-12-08 22:48:33.847 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:33.847 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:33.848 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty username
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:34.020 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:34.021 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:34.021 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with empty password
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_004]
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:34.055 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:35.159 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:35.159 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:35.161 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:35.163 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with empty password
+2025-12-08 22:48:35.163 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with empty password
+2025-12-08 22:48:35.165 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:35.167 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:35.168 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:35.168 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:36.952 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:36.998 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:37.042 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:37.455 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:37.472 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:37.474 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:37.474 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:37.474 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:37.695 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:37.696 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:37.696 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.309 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.312 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: testuser123
+2025-12-08 22:48:38.313 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.313 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.365 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.365 [main] INFO  com.demoblaze.pages.BasePage - Entering username: testuser123
+2025-12-08 22:48:38.365 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:38.580 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:48:38.582 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving password field empty
+2025-12-08 22:48:38.583 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.583 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.613 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.614 [main] INFO  com.demoblaze.pages.BasePage - Leaving password field empty
+2025-12-08 22:48:38.614 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:38.698 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+2025-12-08 22:48:38.699 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:38.701 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:38.701 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:38.727 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:38.727 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:38.727 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:38.893 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:39.896 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:39.896 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:39.896 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:39.902 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:39.903 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:39.908 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:39.917 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:39.920 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:39.920 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with empty password
+2025-12-08 22:48:40.354 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:40.355 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:40.355 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with empty password
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:40.528 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:40.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration fails with all fields empty
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @negative, @validation, @TC_SIGNUP_005]
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:40.548 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:41.470 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:41.472 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:41.473 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration fails with all fields empty
+2025-12-08 22:48:41.473 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration fails with all fields empty
+2025-12-08 22:48:41.474 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:41.476 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:41.477 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:41.477 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:43.601 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:43.625 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:43.715 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:44.142 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:44.154 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:44.154 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:44.154 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:44.154 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:44.316 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:44.318 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:44.318 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:44.901 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:44.903 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Leaving all fields empty
+2025-12-08 22:48:44.904 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:44.905 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:44.952 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:44.952 [main] INFO  com.demoblaze.pages.BasePage - Leaving all fields empty
+2025-12-08 22:48:44.952 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:45.063 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-username
+2025-12-08 22:48:45.063 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:45.136 [main] DEBUG com.demoblaze.utils.ElementHelper - Cleared element: By.id: sign-password
+2025-12-08 22:48:45.137 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:45.138 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:45.138 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:45.169 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:45.170 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:45.170 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:45.328 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:46.331 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Please fill out Username and Password.
+2025-12-08 22:48:46.331 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:46.331 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:46.339 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Please fill out Username and Password.
+2025-12-08 22:48:46.339 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:46.345 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Please fill out Username and Password.
+2025-12-08 22:48:46.352 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:46.354 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:46.354 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration fails with all fields empty
+2025-12-08 22:48:46.940 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:46.940 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:46.941 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:47.091 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration fails with all fields empty
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:47.092 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: User registration with special characters in credentials
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @positive, @specialchars, @TC_SIGNUP_006]
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:47.114 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:48.118 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:48.119 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: User registration with special characters in credentials
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: User registration with special characters in credentials
+2025-12-08 22:48:48.120 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:48.122 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:48.123 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:48.123 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:49.148 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:49.199 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:49.261 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:49.830 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:49.846 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:49.846 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:49.847 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:49.847 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:50.077 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:50.078 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.080 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.660 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:50.662 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: test@user#123_{timestamp}
+2025-12-08 22:48:50.662 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.662 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.693 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:50.694 [main] INFO  com.demoblaze.pages.BasePage - Entering username: test@user#123_1765226930662
+2025-12-08 22:48:50.694 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:48:50.955 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:48:50.957 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:48:50.957 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:50.957 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:50.999 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:51.001 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:48:51.001 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:48:51.156 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:48:51.158 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:48:51.159 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:51.160 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:51.203 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:51.204 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:48:51.204 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:51.342 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:48:52.346 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:48:52.347 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:52.347 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:52.354 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:48:52.356 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:48:52.361 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:48:52.367 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:48:52.368 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:52.369 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: User registration with special characters in credentials
+2025-12-08 22:48:52.882 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:52.883 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:52.884 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: User registration with special characters in credentials
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:53.051 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Close signup modal without registering
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @ui, @modal, @TC_SIGNUP_007]
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:53.148 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:54.329 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:54.330 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:54.333 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Close signup modal without registering
+2025-12-08 22:48:54.333 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Close signup modal without registering
+2025-12-08 22:48:54.334 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:54.335 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:54.336 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:54.336 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:55.470 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:55.489 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:55.568 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:48:56.014 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:48:56.030 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:48:56.033 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:56.034 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:48:56.034 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:48:56.237 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:48:56.238 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:48:56.238 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:48:56.821 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:48:56.837 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:48:56.838 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Close signup modal without registering
+2025-12-08 22:48:57.404 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:48:57.404 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:48:57.405 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Close signup modal without registering
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Status: UNDEFINED
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:48:57.559 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:48:57.560 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:48:57.592 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.592 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:48:57.593 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:48:58.599 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:48:58.601 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:48:58.602 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:48:58.602 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:48:58.604 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:48:58.605 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:48:59.922 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:48:59.935 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:48:59.979 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:00.416 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:49:00.435 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:00.436 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:00.436 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:00.436 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:00.673 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:00.674 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:00.674 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.264 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.266 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user1_{timestamp}
+2025-12-08 22:49:01.267 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.267 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.293 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.293 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user1_1765226941266
+2025-12-08 22:49:01.294 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:01.497 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:49:01.498 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:01.499 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.499 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.530 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.530 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:01.530 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:01.681 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:49:01.682 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:01.684 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:01.684 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:01.719 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:01.719 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:01.719 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:01.855 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:02.860 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:02.860 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:02.860 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:02.866 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:02.866 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:02.871 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:02.878 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:49:02.880 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:02.880 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:03.346 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:03.346 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:03.347 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:03.524 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:03.547 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:49:04.602 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:49:04.603 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:49:04.605 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:49:04.607 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:49:04.607 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:04.607 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:49:05.642 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:49:05.680 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:49:05.720 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:06.364 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:49:06.377 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:06.377 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:06.377 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:06.377 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:06.596 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:06.597 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:06.597 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.171 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.172 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user2_{timestamp}
+2025-12-08 22:49:07.172 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.172 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.206 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.206 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user2_1765226947172
+2025-12-08 22:49:07.206 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:07.409 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:49:07.410 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:07.412 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.412 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.440 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.440 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:07.440 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:07.598 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:49:07.599 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:07.599 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:07.599 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:07.635 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:07.635 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:07.635 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:07.790 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:08.806 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:08.807 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:08.807 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:08.814 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:08.815 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:08.828 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:08.846 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:49:08.856 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:08.856 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:09.654 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:09.654 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:09.655 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:09.815 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:09.816 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - Starting Scenario: Register multiple users with different credentials
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - Tags: [@regression, @signup, @datadriven, @TC_SIGNUP_008]
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:09.835 [main] INFO  com.demoblaze.utils.DriverManager - Initializing chrome driver...
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.utils.DriverManager - chrome driver initialized successfully
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.utils.DriverManager - Total active drivers: 1
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver initialized successfully
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Browser: chrome
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Application URL: https://www.demoblaze.com/index.html
+2025-12-08 22:49:10.749 [main] INFO  com.demoblaze.hooks.Hooks - Headless mode: false
+2025-12-08 22:49:10.751 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording started for test: Register multiple users with different credentials
+2025-12-08 22:49:10.751 [main] INFO  com.demoblaze.hooks.Hooks - Video recording started for scenario: Register multiple users with different credentials
+2025-12-08 22:49:10.752 [main] INFO  com.demoblaze.utils.AllureHelper - Environment information added to Allure report
+2025-12-08 22:49:10.752 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Navigating to DemoBlaze homepage
+2025-12-08 22:49:10.754 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:10.754 [main] INFO  com.demoblaze.pages.BasePage - Navigating to: https://www.demoblaze.com/index.html
+2025-12-08 22:49:11.812 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for page to load completely
+2025-12-08 22:49:11.828 [main] INFO  com.demoblaze.pages.BasePage - Navigated to DemoBlaze home page
+2025-12-08 22:49:11.883 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.id: nava -> true
+2025-12-08 22:49:13.481 [main] DEBUG com.demoblaze.utils.ElementHelper - Element displayed: By.cssSelector: .card -> true
+2025-12-08 22:49:13.501 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Clicking on link: Sign up
+2025-12-08 22:49:13.502 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:13.502 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up link
+2025-12-08 22:49:13.502 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.id: signin2
+2025-12-08 22:49:13.896 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.id: signin2
+2025-12-08 22:49:13.897 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:13.897 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.553 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:14.554 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering username: user3_{timestamp}
+2025-12-08 22:49:14.554 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.554 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.588 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:14.588 [main] INFO  com.demoblaze.pages.BasePage - Entering username: user3_1765226954554
+2025-12-08 22:49:14.588 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-username
+2025-12-08 22:49:14.783 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-username
+2025-12-08 22:49:14.785 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Entering password
+2025-12-08 22:49:14.786 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.786 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:14.816 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:14.816 [main] INFO  com.demoblaze.pages.BasePage - Entering password
+2025-12-08 22:49:14.816 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: sign-password
+2025-12-08 22:49:14.969 [main] DEBUG com.demoblaze.utils.ElementHelper - Typed text into element: By.id: sign-password
+2025-12-08 22:49:14.972 [main] INFO  com.demoblaze.stepdefinitions.SignUpSteps - Clicking button: Sign up
+2025-12-08 22:49:14.972 [main] DEBUG com.demoblaze.pages.BasePage - Initialized SignUpPage
+2025-12-08 22:49:14.972 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be visible: By.id: signInModal
+2025-12-08 22:49:15.003 [main] DEBUG com.demoblaze.pages.BasePage - Sign up modal is visible
+2025-12-08 22:49:15.003 [main] INFO  com.demoblaze.pages.BasePage - Clicking Sign up button
+2025-12-08 22:49:15.003 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for element to be clickable: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:15.156 [main] DEBUG com.demoblaze.utils.ElementHelper - Clicked element: By.xpath: //button[text()='Sign up']
+2025-12-08 22:49:16.161 [main] INFO  com.demoblaze.stepdefinitions.CommonSteps - Verifying alert message: Sign up successful.
+2025-12-08 22:49:16.162 [main] DEBUG com.demoblaze.pages.BasePage - Initialized HomePage
+2025-12-08 22:49:16.162 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:16.169 [main] DEBUG com.demoblaze.pages.BasePage - Alert text: Sign up successful.
+2025-12-08 22:49:16.169 [main] DEBUG com.demoblaze.utils.WaitHelper - Waiting for alert to be present
+2025-12-08 22:49:16.178 [main] INFO  com.demoblaze.pages.BasePage - Alert present with text: Sign up successful.
+2025-12-08 22:49:16.186 [main] DEBUG com.demoblaze.pages.BasePage - Alert accepted
+2025-12-08 22:49:16.192 [main] INFO  com.demoblaze.hooks.Hooks - Active drivers before cleanup: 1
+2025-12-08 22:49:16.192 [main] INFO  com.demoblaze.hooks.Hooks - Scenario PASSED: Register multiple users with different credentials
+2025-12-08 22:49:17.045 [main] INFO  com.demoblaze.utils.VideoRecorder - Video recording stopped and frames attached to Allure report
+2025-12-08 22:49:17.046 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Success Details
+2025-12-08 22:49:17.047 [main] INFO  com.demoblaze.utils.DriverManager - Quitting driver for current thread...
+2025-12-08 22:49:28.415 [main] INFO  com.demoblaze.utils.DriverManager - Driver quit successfully. Remaining drivers: 0
+2025-12-08 22:49:28.415 [main] INFO  com.demoblaze.hooks.Hooks - WebDriver closed successfully
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Finished Scenario: Register multiple users with different credentials
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Status: PASSED
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Driver Cleanup: SUCCESS
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - Remaining Active Drivers: 0
+2025-12-08 22:49:28.416 [main] INFO  com.demoblaze.hooks.Hooks - ========================================
+
+2025-12-08 22:49:28.558 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:49:28.558 [main] INFO  com.demoblaze.runners.SmokeTestRunner - SMOKE TEST SUITE COMPLETED
+2025-12-08 22:49:28.558 [main] INFO  com.demoblaze.runners.SmokeTestRunner - ========================================
+2025-12-08 22:49:28.558 [main] INFO  com.demoblaze.runners.SmokeTestRunner - No remaining drivers to cleanup
+2025-12-08 22:49:28.559 [main] INFO  com.demoblaze.utils.AllureHelper - Attaching text content: Test Suite Summary
+2025-12-08 22:49:28.559 [main] INFO  com.demoblaze.utils.AllureHelper - Test suite summary created for Allure report
+2025-12-08 22:49:28.559 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Test execution summary:
+2025-12-08 22:49:28.559 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Total tests: 10
+2025-12-08 22:49:28.560 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Passed: 9
+2025-12-08 22:49:28.560 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Failed: 1
+2025-12-08 22:49:28.560 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Execution time: 79715 ms
+2025-12-08 22:49:28.560 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Final driver count: 0
+2025-12-08 22:49:28.560 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Success rate: 90.00%
+2025-12-08 22:49:28.562 [main] INFO  com.demoblaze.utils.VideoRecorder - Deleted 0 old video file(s)
+2025-12-08 22:49:28.562 [main] INFO  com.demoblaze.runners.SmokeTestRunner - Suite teardown completed successfully
+2025-12-08 22:49:28.744 [Thread-1] INFO  com.demoblaze.utils.DriverManager - JVM shutdown detected, cleaning up remaining drivers...
+2025-12-08 22:49:28.745 [Thread-1] INFO  com.demoblaze.utils.DriverManager - Cleaning up all tracked drivers. Total count: 0
+2025-12-08 22:49:28.745 [Thread-1] INFO  com.demoblaze.utils.DriverManager - Driver cleanup completed. Remaining drivers: 0

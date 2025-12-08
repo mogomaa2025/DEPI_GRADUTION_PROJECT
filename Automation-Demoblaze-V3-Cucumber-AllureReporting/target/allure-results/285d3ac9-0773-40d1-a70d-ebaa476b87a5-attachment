@@ -1,0 +1,4 @@
+Test: User registration fails with all fields empty
+Status: PASSED
+Timestamp: 2025-12-08 22:48:46
+Browser: chrome

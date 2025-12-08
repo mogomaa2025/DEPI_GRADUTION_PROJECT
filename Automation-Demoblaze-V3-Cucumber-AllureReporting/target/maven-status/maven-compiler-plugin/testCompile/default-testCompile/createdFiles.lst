@@ -1,0 +1,14 @@
+com\demoblaze\stepdefinitions\CommonSteps.class
+com\demoblaze\runners\SmokeTestRunner.class
+com\demoblaze\stepdefinitions\SignUpSteps.class
+com\demoblaze\stepdefinitions\E2ESteps.class
+com\demoblaze\runners\E2ETestRunner.class
+com\demoblaze\stepdefinitions\LoginSteps.class
+com\demoblaze\runners\CriticalTestRunner.class
+com\demoblaze\stepdefinitions\CartSteps.class
+com\demoblaze\hooks\Hooks.class
+com\demoblaze\stepdefinitions\ContactSteps.class
+com\demoblaze\runners\RegressionTestRunner.class
+com\demoblaze\stepdefinitions\ProductSteps.class
+com\demoblaze\stepdefinitions\NavigationSteps.class
+com\demoblaze\stepdefinitions\CheckoutSteps.class
