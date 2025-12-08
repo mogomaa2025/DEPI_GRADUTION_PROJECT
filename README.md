@@ -81,40 +81,39 @@ This is the core of the project, demonstrating the evolution of a test automatio
 
 ```mermaid
 graph TD
-    subgraph Legend
-        direction LR
-        A[Version 1] --> B[Version 2] --> C[Version 3]
-    end
-
-    subgraph Framework Evolution
-        direction LR
+    subgraph "Framework Evolution"
         v1[V1: Basic Scripting] --> v2[V2: TestNG Framework] --> v3[V3: BDD with Cucumber & Allure]
     end
 
-    subgraph V1 Details
-        direction TB
-        v1_feat1[Java + Selenium]
-        v1_feat2[No Framework]
-        v1_feat3[Basic FileWriter Report]
+    subgraph "Version 1 Details"
+        v1_feat1["Java + Selenium"]
+        v1_feat2["No Framework"]
+        v1_feat3["Basic FileWriter Report"]
     end
 
-    subgraph V2 Details
-        direction TB
-        v2_feat1[TestNG for Test Management]
-        v2_feat2[Page Object Model (POM)]
-        v2_feat3[ExtentReports for HTML Reports]
+    subgraph "Version 2 Details"
+        v2_feat1["TestNG for Test Management"]
+        v2_feat2["Page Object Model (POM)"]
+        v2_feat3["ExtentReports for HTML Reports"]
     end
 
-    subgraph V3 Details
-        direction TB
-        v3_feat1[Cucumber for BDD]
-        v3_feat2[Allure for Advanced Reporting]
-        v3_feat3[Video Recording & Advanced Error Handling]
+    subgraph "Version 3 Details"
+        v3_feat1["Cucumber for BDD"]
+        v3_feat2["Allure for Advanced Reporting"]
+        v3_feat3["Video Recording & Advanced Error Handling"]
     end
 
-    v1 --> V1 Details
-    v2 --> V2 Details
-    v3 --> V3 Details
+    v1 --> v1_feat1
+    v1 --> v1_feat2
+    v1 --> v1_feat3
+
+    v2 --> v2_feat1
+    v2 --> v2_feat2
+    v2 --> v2_feat3
+
+    v3 --> v3_feat1
+    v3 --> v3_feat2
+    v3 --> v3_feat3
 ```
 
 -   **Version 1: No Framework (Basic)**
