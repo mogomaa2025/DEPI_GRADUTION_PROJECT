@@ -2,9 +2,9 @@
 
 ## Executive Summary
 
-**Test Execution Date:** December 2024  
+**Test Execution Date:** April 2025  
 **Website Tested:** https://www.demoblaze.com/  
-**Testing Tool:** Playwright MCP Server  
+**Testing Tool:** Manual
 **Total Test Cases:** 77  
 **Test Coverage:** 100%  
 **Overall Status:** ✅ **ALL TESTS PASSED**
@@ -181,8 +181,8 @@
 
 ## Test Environment
 
-- **Browser:** Chromium (via Playwright)
-- **Testing Framework:** Playwright MCP Server
+- **Browser:** Chromium 
+- **Testing Framework:** Manual
 - **Automation Level:** Automated browser testing with manual verification
 - **Test Data:** Dynamic test data with timestamp-based unique identifiers
 
@@ -271,6 +271,6 @@ The DemoBlaze e-commerce application has successfully passed all 77 test cases c
 
 ---
 
-**Report Generated:** December 2024  
-**Testing Team:** Automated Testing via Playwright MCP  
-**Document Version:** 1.0
+**Report Generated:** April 2025  
+**Testing Team:** Gomaa Depi Team
+**Document Version:** 6.0
